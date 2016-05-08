@@ -172,12 +172,12 @@ public struct MysqlField
 
 public class MysqlSelectQueryBulder :SQLSelectQueryBuilder
 {
-    internal var _table :String
-    internal var _columns :[String] = []
-    internal var _where :[SQLQueryWhere] = []
-    internal var _groupBy :[String] = []
-    internal var _limit :Int?
-    internal var _offset :Int = 0
+    public var _table :String
+    public var _columns :[String] = []
+    public var _where :[SQLQueryWhere] = []
+    public var _groupBy :[String] = []
+    public var _limit :Int?
+    public var _offset :Int = 0
 
     public required init(table :String, columns :[String] = [])
     {
