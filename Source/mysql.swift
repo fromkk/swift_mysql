@@ -184,7 +184,7 @@ public class MysqlSelectQueryBulder :SQLSelectQueryBuilder
         self._table = table
         self._columns = columns
     }
-    internal func limitQuery() -> String
+    public func limitQuery() -> String
     {
         guard let limit = self._limit else
         {
